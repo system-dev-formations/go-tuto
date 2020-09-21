@@ -1,0 +1,13 @@
+paths:
+  /main_person:
+    get:
+      description: return the difference of using a pointer or a value
+      operationId: value
+      responses:
+        "200":
+          $ref: '#/responses/pointer-value'
+      tags:
+      - tests
+      - pointer
+      - and
+swagger: "2.0"

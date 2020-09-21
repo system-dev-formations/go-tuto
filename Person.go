@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+//
 type Person struct {
 	Name string
 	Age  int
@@ -16,6 +17,11 @@ func (p Person) DoesNotGrow() {
 	p.Age++
 }
 
+// swagger:route GET /main_person tests pointer and value
+// return the difference of using a pointer or a value
+// responses:
+//   200: pointer-value
+
 func main() {
 	p := Person{"JY", 10}
 	p.Grow()
@@ -24,4 +30,5 @@ func main() {
 	ptr.DoesNotGrow()
 	fmt.Println(p.Age)
 	fmt.Println(ptr.Age)
+
 }

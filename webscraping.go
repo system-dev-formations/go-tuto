@@ -1,8 +1,8 @@
 package main
 
 import (
-	"net/http"
 	"github.com/temoto/robotstxt"
+	"net/http"
 )
 
 func main() {
